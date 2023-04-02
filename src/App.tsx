@@ -28,7 +28,7 @@ const AppContainer = styled.div`
         width: 9vw;
         padding: 10px;
         border: none;
-        border-radius: 6px;
+        border-radius: 5px;
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
         letter-spacing: 1px;
         :hover {
@@ -47,7 +47,7 @@ const AppContainer = styled.div`
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.3);
       width: 50vw;
-      padding: 6px 20px;
+      padding: 5px 20px;
 
       h2 {
         display: flex;
