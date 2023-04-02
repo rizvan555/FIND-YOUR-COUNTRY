@@ -5,32 +5,32 @@ import background2 from './resource/images/background2.jpg';
 
 const AppContainer = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
   background-color: aliceblue;
   color: white;
+  padding-top: 8vh;
 
   main {
     form {
       display: flex;
-      gap: 3vw;
-      margin: 20px auto 50px auto;
+      gap: 2vw;
+      margin: 10px auto 50px auto;
       input {
-        width: 35vw;
+        width: 40vw;
         padding: 15px;
         border: none;
         border-radius: 5px;
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
       }
       button {
-        width: 10vw;
-        padding: 10px 20p;
+        width: 9vw;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-
+        letter-spacing: 1px;
         :hover {
           background-color: red;
           color: white;
@@ -47,13 +47,17 @@ const AppContainer = styled.div`
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.3);
       width: 50vw;
+      padding: 5px 20px;
+
       h2 {
         display: flex;
         align-items: center;
         font-weight: bold;
-        color: red;
+        color: green;
         font-size: 30px;
         letter-spacing: 1px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 5px 50px;
       }
       ul {
         font-size: 20px;
@@ -62,13 +66,14 @@ const AppContainer = styled.div`
           align-items: center;
           list-style-type: none;
           font-weight: bold;
-          color: #b5b8b1;
+          color: #e5e5e5;
         }
         p,
         a {
           font-weight: 400;
           padding-left: 10px;
           color: white;
+          font-size: 18px;
         }
         a:hover {
           padding-left: 10px;
