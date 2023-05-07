@@ -1,4 +1,3 @@
-import { url } from 'inspector';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import background2 from './resource/images/background2.jpg';
