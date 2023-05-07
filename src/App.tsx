@@ -86,6 +86,7 @@ const AppContainer = styled.div`
 
 function App() {
   const [countryData, setCountryData] = useState<any>(null);
+  const [light, setLight] = useState(true);
 
   function searchButton(e: any) {
     e.preventDefault();
@@ -94,17 +95,19 @@ function App() {
       .then((response) => response.json())
       .then((data) => setCountryData(data[0]));
   }
-  // )  console.log(data)  setCountryData(data[0]
+
   return (
     <div>
       <AppContainer
         style={{
-          backgroundImage: `url(${background2})`,
+          backgroundImage: light ? `url(${background2})` : '',
+          backgroundColor: !light ? 'black' : '',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
       >
         <header>
+          <button onClick={() => setLight(!light)}>Dark-Light</button>
           <h1>Find your country 🤩</h1>
         </header>
         <main>
