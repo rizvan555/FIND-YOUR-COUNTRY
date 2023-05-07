@@ -120,7 +120,7 @@ function App() {
               <ul>
                 <li>
                   Capital:
-                  <p>{` ${countryData.capital}`}</p>
+                  <span>{` ${countryData.capital}`}</span>
                 </li>
                 <li>
                   Area:
